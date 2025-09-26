@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
+
         String[] options = {"First Fit", "Next Fit", "Best Fit", "Worst Fit"};
         String algorithm = (String) JOptionPane.showInputDialog(
             null,
@@ -25,8 +26,6 @@ public class Main {
         ProcessGenerator generator = new ProcessGenerator();
         Random random = new Random();
         List<Integer> allocatedProcesses = new ArrayList<>();
-
-        System.out.println("Starting simulation with " + algorithm);
         
         for (int second = 1; second <= 100; second++) {
             System.out.println("\n--- Second " + second + " ---");

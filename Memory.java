@@ -53,7 +53,7 @@ public class Memory {
         return false;
     }
 
-    
+    // tries to find the smallest block that has size enough to allocate the process
     private boolean bestFit(Process process) {
         Block best = null;
         Block current = head;
@@ -72,6 +72,7 @@ public class Memory {
         return false;
     }
 
+    // tries to find the biggest block that has size enough to allocate the process
     private boolean worstFit(Process process) {
         Block worst = null;
         Block current = head;
@@ -135,6 +136,7 @@ public class Memory {
         }
     }
 
+    // print format to show the memory blocks
     public void printState() {
         StringBuilder sb = new StringBuilder();
         Block current = head;
