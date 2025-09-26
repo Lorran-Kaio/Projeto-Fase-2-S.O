@@ -1,3 +1,4 @@
+package src;
 public class Block {
     int start; 
     int size; 

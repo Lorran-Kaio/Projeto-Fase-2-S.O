@@ -1,3 +1,4 @@
+package src;
 public class Memory {
     private static final int TOTAL_SIZE = 1000;
     private Block head; // first block

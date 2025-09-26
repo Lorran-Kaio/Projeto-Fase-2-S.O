@@ -1,3 +1,4 @@
+package src;
 public class Process {
     int id;
     int size;
